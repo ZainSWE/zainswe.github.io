@@ -1,8 +1,117 @@
+.montserrat-normal {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-black {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
   color: #ffffff;
+  font-size: 20px;
+  text-align: center;
 }
 
 p {
-  font-size: 16px;
   color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+
+h1, p {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the navbar horizontally */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent; /* Optional: Remove if you want a background color */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adds spacing between links */
+}
+
+.navbar a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #404040;
+    border-radius: 5px;
+}
+
+
+.navbar ul{
+  position: relative;
+  list-style: none;
+}
+
+.navbar, h1, p {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#glass-panel {
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 15vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    z-index: 0;
 }

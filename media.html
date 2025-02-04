@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let glassPanel = document.createElement("div");
+    glassPanel.id = "glass-panel";
+    document.body.appendChild(glassPanel);
+    });
+   </script>
 </head>
-<body style = "background-color: #0e0e0e">
 
-<h1>Media</h1>
-<p>Some of my multimedia work @ National Proms</p>
+<body class="montserrat-normal" style="background-color: #0e0e0e">
 
-<div class = "topnav">
-    <a href = "index.html">Home</a>
-    <a href = "3d.html">3D</a>
-    <a href = "media.html">Media</a>
-    <a href = "code.html">Code</a>
-    <a></a>
-</div>
+<video autoplay muted id="background-video">
+  <source src="background/logo.mp4" type="video/mp4">
+</video>
+
+<nav class="navbar">
+  <ul>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="code.html">Code</a>
+    <a href="3d.html">3D</a>
+  </ul>
+</nav>
+
+<h1 class="montserrat-black">Media</h1>
+<p>Some of my multimedia work @ <a href = "https://nationalproms.com/" target = "_blank">National Proms</p>
 
 </body>
 </html>
