@@ -41,13 +41,13 @@ h1, p {
 
 .navbar {
     display: flex;
-    justify-content: center; /* Centers the navbar horizontally */
+    justify-content: center;
     align-items: center;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent; /* Optional: Remove if you want a background color */
+    background: transparent;
 }
 
 .navbar ul {
@@ -55,7 +55,7 @@ h1, p {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px; /* Adds spacing between links */
+    gap: 20px;
 }
 
 .navbar a {
@@ -105,7 +105,7 @@ html, body {
     top: 43.5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 38%;
+    width: 30%;
     height: 15vh;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
