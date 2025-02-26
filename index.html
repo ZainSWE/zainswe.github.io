@@ -1,38 +1,117 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    let glassPanel = document.createElement("div");
-    glassPanel.id = "glass-panel";
-    document.body.appendChild(glassPanel);
-    });
-   </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="montserrat-normal" style="background-color: #0e0e0e">
+<body style="background-color: #1f1b18; font-family: 'Montserrat', serif;">
 
-<video autoplay muted playsinline id="background-video">
-    <source src="background/logo-home.mp4" type="video/mp4">
-</video>
+<!--header-->
+<header style="background-color: #403932; padding: 10px; font-size: 30px; text-align: center; color: #f2ecda;">
+    <br><br>
+    <h1>The Daily Doughnut</h1>
+    <img src="images/mylogo.png" alt="logo" style="width:100px; height:100px; position: relative; left: 400px; top: -120px;">
+    <p style="position: relative; top: -150px; font-size: 20px;">
+        Your daily dose of doughnut rankings!
+    </p>
+</header>
 
-<nav class="navbar">
-  <ul>
-    <a href="index.html">Home</a>
-    <a href="media.html">Media</a>
-    <a href="code.html">Code</a>
-    <a href="3d.html">3D</a>
-  </ul>
-</nav>
+<!--navbar-->
+<section style="background-color: #f2ecda;">
+    <nav>
+        <ul style="overflow: hidden; margin: 0px; font-weight: 600; list-style-type: none;">
+            <li style="float: right;"><a href="#" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">Top Picks</a></li>
+            <li style="float: right;"><a href="https://www.instagram.com/suzyq.doughnuts/?hl=en" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">SuzyQ Doughnuts Instagram</a></li>
+            <li style="float: right;"><a href="https://www.instagram.com/cartemsdonuts/?hl=en" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">Cartems Donuts Instagram</a></li>
+            <li style="float: right;"><a href="https://www.instagram.com/doughnutparty/?hl=en" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">Doughnut Party Instagram</a></li>
+            <li style="float: right;"><a href="https://suzyq.ca/" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">SuzyQ Doughnuts</a></li>
+            <li style="float: right;"><a href="https://cartems.com/" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">Cartems Donuts</a></li>
+            <li style="float: right;"><a href="https://www.doughnutparty.ca/" target="_blank" style="color:#1f1b18; text-decoration: none; background-color: #f2ecda; display: inline-block; padding: 15px;">Doughnut Party</a></li>
+        </ul>
+    </nav>
+</section>
 
-<h1 class="montserrat-black">ZAIN AHMAD</h1>
-<p>Multimedia Specialist | Software Engineer</p>
+<main style="background-color: #120e09; padding: 100px; color: #f2ecda;">
+    <h1>Let's Look @ Canada's craziest freshly baked doughnuts!</h1>
+
+    <!--first article-->
+    <article>
+        <h2>3. Doughnut Party</h2>
+        <h4>Edmonton, Alberta</h4>
+        <p style="max-width: 740px; line-height: 1.6;">
+            Doughnut Party has become a beloved name in Canada's gourmet doughnut scene, 
+            with four locations—three in Edmonton and one in Calgary. Established in 2017, 
+            the bakery is approaching nine years of delighting customers with its fun, creative, 
+            and freshly baked doughnuts. Known for their bold flavors and artistic presentation, 
+            Doughnut Party has built a strong following, expanding their stores to meet increasing 
+            demand and popularity. One of the standout features of Doughnut Party is its 
+            ever-changing weekly menu, which introduces new and inventive doughnuts while 
+            rotating out past flavors. While this keeps things fresh and exciting, 
+            it also means that if you fall in love with a particular doughnut, you might have to 
+            wait for it to return. Some of my personal favorites from their lineup include:
+            </p>
+        </p>
+        <ul>
+            <li>Vanilla Dipped Lucky Charms: A nostalgic treat with a colorful and sweet cereal topping.</li>
+            <li>Mothership: A rich and indulgent option that lives up to its name.</li>
+            <li>Candy Conucopia: A playful, seasonal creation perfect for those who enjoy a mix of flavors.</li>
+        </ul>
+        <div style="display: flex; gap: 8px;">
+            <img src="images/DoughnutParty-VanillaDip-LuckyCharms.png" style="width:239.3px; height:299.3px;">
+            <img src="images/DoughnutParty-Mothership.png" style="width:239.3px; height:299.3px;">
+            <img src="images/DoughnutParty-Candy-Cornucopia.png" style="width:239.3px; height:299.3px;">
+        </div>
+    </article>
+
+    <!--second article-->
+    <article>
+        <h2>2. Cartems Donuts</h2>
+        <h4>Vancouver, British Columbia</h4>
+        <p style="max-width: 740px; line-height: 1.6;">
+            Cartems Donuts is a must-visit spot in Vancouver for any doughnut enthusiast. Known for its commitment 
+            to quality ingredients and unique flavors, Cartems has built a strong reputation for crafting 
+            doughnuts that are as delicious as they are innovative. The bakery focuses on using organic, 
+            locally sourced ingredients and offers a variety of options, including classic, gluten-free, and 
+            vegan-friendly doughnuts. Some standout options from Cartems' menu include:
+        </p>
+        <ul>
+            <li>Blueberry Cornbread: A perfect mix of sweet and savory, with a moist cornbread base infused with fresh blueberries.</li>
+            <li>White Chocolate Raspberry: A decadent doughnut topped with creamy white chocolate and a tangy raspberry drizzle.</li>
+            <li>S'mores Creamsicle: A nostalgic treat featuring rich chocolate, toasted marshmallow, and a citrusy creamsicle twist.</li>
+        </ul>
+        <div style="display: flex; gap: 8px;">
+            <img src="images/CartemsDonuts-Blueberry-Cornbread.png" style="width:239.3px; height:299.3px;">
+            <img src="images/CartemsDonuts-WhiteChocolate-Raspberry.png" style="width:239.3px; height:299.3px;">
+            <img src="images/CartemsDonuts-S'mores-Creamsicles.png" style="width:239.3px; height:299.3px;">
+        </div>
+    </article>
+
+    <!--third article-->
+    <article>
+        <h2>1. SuzyQ Doughnuts</h2>
+        <h4>Ottawa, Ontario</h4>
+        <p style="max-width: 740px; line-height: 1.6;">
+            Suzy Q Doughnuts has become an iconic name in Ottawa's pastry scene, offering some of the most inventive 
+            and delicious doughnuts in the city. The bakery takes pride in its high-quality ingredients and its famous, 
+            fluffy doughnut base. Some standout flavors include:
+        </p>
+        <ul>
+            <li>Black Forest: A chocolate lover's dream with rich layers of cherry and cream.</li>
+            <li>Carrot Cake: A warm spiced doughnut topped with a luscious cream cheese glaze.</li>
+            <li>Vanilla Bean Glaze with Oreo Sprinkles: A sweet classic with a crunchy twist.</li>
+        </ul>
+        <div style="display: flex; gap: 8px;">
+            <img src="images/SuzyQDoughnuts-BlackForest.png" style="width:239.3px; height:299.3px;">
+            <img src="images/SuzyQDoughnuts-CarrotCake.png" style="width:239.3px; height:299.3px;">
+            <img src="images/SuzyQDoughnuts-VanillaBeanGlaze-OreoSprinkle.png" style="width:239.3px; height:299.3px;">
+        </div>
+    </article>
+</main>
+
+<footer style="position: relative; text-align: left; bottom: 40px; padding: 10px; font-size: 10px; color: #f2ecda;">
+    <p>© 2025 Zain Ahmad ~ The Daily Doughnut</p>
+</footer>
 
 </body>
 </html>
