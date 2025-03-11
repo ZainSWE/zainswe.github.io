@@ -27,7 +27,6 @@ video {
   z-index: -1;
 }
 
-/*content scale adjuster*/
 .content {
   transform: scale(1.2);
   transform-origin: top center;
@@ -35,8 +34,8 @@ video {
 
 .pfp {
   width: 120px;
-  height: 120px; 
-  border-radius: 50%; 
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
   position: absolute;
   top: -3%;
@@ -66,7 +65,7 @@ video {
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -78,13 +77,17 @@ video {
   height: 8px;
   border-radius: 60px;
   background-color: white;
+  position: absolute;
+  top: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
   box-shadow: 0 0 10px white;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .home button:hover {
-  color: white;
   background-color: rgb(147, 241, 255);
 }
 
@@ -125,7 +128,7 @@ video {
 }
 
 .about {
-  height: 5vh;
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +139,7 @@ video {
 .about p {
   font-size: 14px;
   line-height: 1.4;
+  max-width: 16%;
 }
 
 .projects,
@@ -147,4 +151,73 @@ video {
   align-items: center;
   color: white;
   text-align: center;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .content {
+    transform: scale(1);
+    padding: 0 20px;
+  }
+
+  .pfp {
+    width: 100px;
+    height: 100px;
+    top: -80px;
+  }
+
+  .ZAIN-AHMAD {
+    font-size: 28px;
+    margin-top: 35vh;
+  }
+
+  .Software-Engineer {
+    font-size: 18px;
+    margin-top: -3vh;
+  }
+
+  .navbar {
+    top: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar button {
+    width: 180px;
+    padding: 12px 0;
+  }
+
+  .home button {
+    width: 200px;
+    top: auto;
+    bottom: 40px;
+  }
+
+  .about {
+    height: auto;
+    min-height: 20vh;
+    padding: 20px 0;
+  }
+
+  .about p {
+    font-size: 15px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    transform: scale(1.1);
+  }
+  
+  .ZAIN-AHMAD {
+    margin-top: 40vh;
+  }
 }
