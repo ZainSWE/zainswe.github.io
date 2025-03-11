@@ -164,7 +164,8 @@ video {
     position: fixed;
     top: auto;
     bottom: 20px;
-    width: 70%;
+    height: 6px;
+    width: 200px;
     max-width: 300px;
   }
 
