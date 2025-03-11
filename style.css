@@ -139,7 +139,7 @@ video {
 .about p {
   font-size: 14px;
   line-height: 1.4;
-  max-width: 16%;
+  max-width: 17%;
 }
 
 .projects,
@@ -194,8 +194,7 @@ video {
 
   .home button {
     width: 200px;
-    top: auto;
-    bottom: 40px;
+    top: 800px;
   }
 
   .about {
