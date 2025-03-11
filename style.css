@@ -3,6 +3,8 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  -webkit-font-smoothing: antialiased; /* For Chrome */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox */
 }
 
 body {
