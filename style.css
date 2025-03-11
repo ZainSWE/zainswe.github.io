@@ -155,11 +155,22 @@ video {
 
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
-  .content {
-    transform: scale(1);
-    padding: 0 20px;
+  .home {
+    top: auto;
+    bottom: 40px;
   }
 
+  .home button {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .content {
+    padding-bottom: 100px;
+  }
   .pfp {
     width: 100px;
     height: 100px;
@@ -192,11 +203,6 @@ video {
     padding: 12px 0;
   }
 
-  .home button {
-    width: 200px;
-    top: 800px;
-  }
-
   .about {
     height: auto;
     min-height: 20vh;
@@ -210,6 +216,8 @@ video {
   }
 }
 
+  
+
 /* Tablet Adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
   .content {
@@ -218,5 +226,12 @@ video {
   
   .ZAIN-AHMAD {
     margin-top: 40vh;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* iOS specific fixes */
+  .home button {
+    bottom: max(20px, env(safe-area-inset-bottom));
   }
 }
