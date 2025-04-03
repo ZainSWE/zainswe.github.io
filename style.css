@@ -11,7 +11,7 @@ body {
 }
 
 .fwh-slide {
-  height: 40vh;
+  height: 5vh;
   background: black;
   color: white;
   box-sizing: border-box;
@@ -36,11 +36,32 @@ nav {
   gap: 1.5rem;
 }
 
+nav a {
+  text-decoration: none;
+  color: black
+}
+
 a {
   color: rgb(0, 204, 255);
 }
 
-nav a {
-  text-decoration: none;
-  color: black
+.latest-project {
+  height: 60vh;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.latest-project-title {
+  position: absolute;
+  top: 25rem;
+  font-size: 2rem;
+}
+
+.latest-project-video {
+  position: absolute;
+  top: 50rem;
+  left: 5rem;
+  width: 50rem;
 }
