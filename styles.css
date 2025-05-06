@@ -1,0 +1,99 @@
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+.background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter:blur(0.5rem);
+  z-index: -1;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.fwh-slide {
+  height: 5vh;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.fwh-slide p {
+  margin: 0;
+}
+
+.banner {
+  background: black;
+  color: white;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  margin: 0;
+  gap: 1rem;
+}
+
+
+a:hover {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+ }
+
+nav a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+a {
+  color: rgb(0, 204, 255);
+}
+
+.latest-project {
+  height: 60vh;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+  margin-top: 0rem;
+}
+
+.latest-project-title {
+  display: flex;
+  top: 25rem;
+  font-size: 2rem;
+  margin-top: -5rem;
+}
+
+.hackathons {
+  height: 60vh;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
+  margin-top: -20rem;
+}
+
+.hackathons-title {
+  display: flex;
+  top: 50rem;
+  font-size: 2rem;
+}
