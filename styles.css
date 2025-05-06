@@ -7,12 +7,35 @@
 
 .background {
   position: fixed;
-  right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  filter:blur(0.5rem);
+  filter: blur(0.5rem);
   z-index: -1;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.sub {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: -5rem;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
 }
 
 body {
@@ -45,26 +68,48 @@ nav {
   gap: 1rem;
 }
 
-
-a:hover {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  border-radius: 2rem;
- }
-
 nav a {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.456);
   color: white;
   text-decoration: none;
   padding: 1rem;
   border-radius: 2rem;
   margin: 0.5rem;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.5s ease;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
 }
 
 a {
-  color: rgb(0, 204, 255);
+  text-decoration: none;
+}
+
+body a:not(nav a) {
+  color: rgb(255, 0, 221);
+  padding: 0;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  background: none;
+  text-decoration: none;
+}
+
+body a:not(nav a):hover {
+  background-color: unset;
+  color: #ff77e2;
+  padding: 0;
+  border-radius: 0;
+}
+
+.heading {
+  background: -webkit-linear-gradient(#ff009d, #ff3ed5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .latest-project {
@@ -96,4 +141,12 @@ a {
   display: flex;
   top: 50rem;
   font-size: 2rem;
+}
+
+.about {
+  height: 60vh;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem;
 }
