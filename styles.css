@@ -318,7 +318,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--color);
-  color: var(--bg-color);
+  color: var(--text-color);
   width: 20rem;
   height: 20rem;
   text-align: center;
