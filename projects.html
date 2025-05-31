@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zain Ahmad</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<body class="montserrat-font">
 
-<body class="inter-regular">
-  <div class="background-container">
-    <video class="background" autoplay loop muted>
-      <source src="videos/Background.mp4">
-    </video>
-  </div>    
-  <nav>
-    <a href="index.html">HOME</a>
-    <a href="projects.html">PROJECTS</a>
-    <a href="about.html">ABOUT</a>
-  </nav>
-    <section class="banner">
-      <h1 class="name">ZAIN AHMAD</h1>
-      <h1 class="sub">../dev->portfolio</h1>
-      <h1>
-        | PROJECTS
-      </h1>
-      <p>
-        GitHub: <a href="https://github.com/ZainSWE" target="_blank">ZainSWE</a>
-      </p>
-    </section>
-    <div class="divider">
-      <video class="background" autoplay loop muted>
-        <source src="videos/Background.mp4">
-      </video>
+  <main class="fade-in">
+    <div class="navBackground"></div>
+    <button id="theme-toggle" class="theme-toggle">🔆</button>
+
+    <div class="social-icons">
+        <a href="mailto:zainahmad.swe@gmail.com" target="_blank" aria-label="Email">
+          <img src="items/gmail.png" style="height: 1rem">
+        </a>
+        <a href="https://github.com/ZainSWE" target="_blank" aria-label="GitHub">
+          <img src="items/github.png" style="height: 1rem">
+        </a>
+        <a href="https://www.linkedin.com/in/zainswe/" target="_blank" aria-label="LinkedIn">
+          <img src="items/linkedin.png" style="height: 1rem">
+        </a>
     </div>
-    <section class="fwh-slide">
-      <h1 class="heading">
-        PROJECTS:
-      </h1>
-    </section>
-    <section class="latest-project">
-      <h1 class="latest-project-title">
-        Coin Toss Simulator
-      </h1>
-      <p>
-        Coin Toss Simulator is my first JavaScript web-app that
-        allows users to settle scores by flipping a virtual coin 
-        with heads/tails. Some features that this application includes are the following:
-        <ul>
-          <li>Auto Toss</li>
-          <li>Reset Score</li>
-          <li>Counting Scores</li>
-          <li>3D Coin Animation</li>
-          <li>5x Streak Animation</li>
-        </ul>
-        You can currently try a live build of Coin Toss Simulator here: <a href="https://zainswe.github.io/Coin-Toss/" target="_blank">Coin Toss Simulator</a>
-      </p>
-    </section>
-</body>
 
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+
+    <nav id="navbar" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="items/Resume.pdf" target="_blank">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <h1 class="projects">Projects</h1>
+
+    <div class="projectContainer">
+      <a href="https://zainswe.github.io/GPYOU/" target="_blank" class="projectBox">
+        <h1>GPYOU</h1>
+        <p>
+          GPYOU is an interactive, AI-powered web app designed to help users choose the ideal graphics card based on their unique needs and budget.
+        </p>
+      </a>
+
+      <a href="https://zainswe.github.io/Coin-Toss/" target="_blank" class="projectBox">
+        <h1>Coin Toss Simulator</h1>
+        <p>A coin toss simulator that uses an interactive pre-rendered Blender animation.</p>
+      </a>
+
+      <a href="https://zainswe.github.io/Task-Time/" target="_blank" class="projectBox">
+        <h1>Task Time</h1>
+        <p>Task Time is a web-app currently in development that calculates the average time you take on a task based on several attempts.</p>
+      </a>
+    </div>
+    <h1 class="soon">More coming soon...</h1>
+  </main>
+  <footer>© 2025 Zain Ahmad</footer>
+  <script src="app.js"></script>
+</body>
 </html>

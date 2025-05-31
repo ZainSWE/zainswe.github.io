@@ -1,95 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zain Ahmad</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<body class="montserrat-font">
 
-<body class="inter-regular">
-  <div class="background-container">
-    <video class="background" autoplay loop muted>
-      <source src="videos/Background.mp4">
-    </video>
-  </div>
-  <nav>
-    <a href="index.html">HOME</a>
-    <a href="projects.html">PROJECTS</a>
-    <a href="about.html">ABOUT</a>
-  </nav>
-    <section class="banner">
-      <h1 class="name">ZAIN AHMAD</h1>
-      <h1 class="sub">../dev->portfolio</h1>
-      <h1>
-       | HOME
-      </h1>
-      <p>
-        Software Engineer / CS Student @ University of Guelph
-      </p>
-    </section>
-    <div class="divider">
-      <video class="background" autoplay loop muted>
-        <source src="videos/Background.mp4">
-      </video>
+  <main class="fade-in">
+    <div class="navBackground"></div>
+    <button id="theme-toggle" class="theme-toggle">🔆</button>
+
+    <div class="social-icons">
+        <a href="mailto:zainahmad.swe@gmail.com" target="_blank" aria-label="Email">
+          <img src="items/gmail.png" style="height: 1rem">
+        </a>
+        <a href="https://github.com/ZainSWE" target="_blank" aria-label="GitHub">
+          <img src="items/github.png" style="height: 1rem">
+        </a>
+        <a href="https://www.linkedin.com/in/zainswe/" target="_blank" aria-label="LinkedIn">
+          <img src="items/linkedin.png" style="height: 1rem">
+        </a>
     </div>
-    <section class="fwh-slide">
-      <h1 class="heading">
-        LATEST PROJECT:
-      </h1>
-    </section>
-    <section class="latest-project">
-      <h1 class="latest-project-title">
-        Coin Toss Simulator
-      </h1>
-      <p>
-        Coin Toss Simulator is my first JavaScript web-app that
-        allows users to settle scores by flipping a virtual coin 
-        with heads/tails. Some features that this application includes are the following:
-        <ul>
-          <li>Auto Toss</li>
-          <li>Reset Score</li>
-          <li>Counting Scores</li>
-          <li>3D Coin Animation</li>
-          <li>5x Streak Animation</li>
-        </ul>
-        <h3>FRAMEWORK:</h3>
-        <p>
-          HTML / CSS / JS / Blender
-        </p>
-        You can currently try a live build of Coin Toss Simulator here: <a href="https://zainswe.github.io/Coin-Toss/" target="_blank">Coin Toss Simulator</a>
-      </p>
-    </section>
-    <section class="fwh-slide">
-      <h1 class="heading">
-        🧠 HACKATHONS
-      </h1>
-    </section>
-    <section class="hackathons">
-      <h1 class="hackathons-title">
-        GPYOU
-      </h1>
-      <p>
-        1st place for Best UI @ <a href="https://devpost.com/software/gpyou" target="_blank">Google Developer Student Clubs</a> (GDSC) 2025 Guelph Hackathon.
-      </p>
-      <h3>PROBLEM:</h3>
-      <p>
-        The graphics card market is constantly changing - dozens of models, confusing specifications, and widely varying prices make it difficult to know what to choose.
-      </p>
-      <h3>SOLUTION:</h3>
-      <p>
-        GPYOU simplifies that process by asking you 4 questions, then offering personalized recommendations tailored to you.
-      </p>
-      <h3>FRAMEWORK:</h3>
-      <p>
-        HTML / CSS / JS / Blender / SketchUp / Google Gen Ai API
-      </p>
-      You can currently try a live build of GPYOU here: <a href="https://zainswe.github.io/GDSC25/" target="_blank">GPYOU</a>
-    </section>
-</body>
 
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+
+
+    <nav id="navbar" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="items/Resume.pdf" target="_blank">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+
+    <section class="blurb">
+    <h1 class="blurbTitle">Zain Ahmad</h1>
+    <p class="blurbSubtitle">Software Engineer | Multimedia Specialist</p>
+    <p class="blurbText">
+      Computer science student @ University of Guelph with hands-on experience in front-end development, video production, and AI integration. Looking to contribute technical and creative skills to software or media development projects.
+    </p>
+    </section>
+
+    <!--IDEA FOR TECH STACK SECTION IN PORTFOLIO:
+
+    make 3d interactive models of each programming language icon / creative tools icon
+    and then have a left to right scrolling bar with all the 3d assets inside that you can interact with and move around, this will show proof of 3d skill.-->
+    
+    <div class="techstackBackground"></div>
+    <section class="techstack">
+      <h1>My Tech Stack / Creative Tools</h1>
+    </section>
+
+    <div class="techstackButtons">
+      <li>
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>JavaScript</button>
+        <button>Java</button>
+        <button>Python</button>
+        <button>C</button>
+      </li>
+    </div>
+
+    <div class="creativeToolsButtons">
+    <li>
+      <button>Adobe After Effects</button>
+      <button>Adobe Premiere Pro</button>
+      <button>Adobe Photoshop</button>
+      <button>Blender</button>
+      <button>SketchUp</button>
+      <button>Unreal Engine 5</button>
+    </li>
+  </div>
+  </main>
+  <footer>© 2025 Zain Ahmad</footer>
+  <script src="app.js"></script>
+</body>
 </html>

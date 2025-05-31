@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zain Ahmad</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+<body class="montserrat-font">
 
-<body class="inter-regular">
-  <div class="background-container">
-    <video class="background" autoplay loop muted>
-      <source src="videos/Background.mp4">
-    </video>
-  </div>
-  <nav>
-    <a href="index.html">HOME</a>
-    <a href="projects.html">PROJECTS</a>
-    <a href="about.html">ABOUT</a>
-  </nav>
-    <section class="banner">
-      <h1 class="name">ZAIN AHMAD</h1>
-      <h1 class="sub">../dev->portfolio</h1>
-      <h1>
-        | ABOUT
-      </h1>
-      <p>
-        A bit about me
-      </p>
-    </section>
-    <div class="divider">
-      <video class="background" autoplay loop muted>
-        <source src="videos/Background.mp4">
-      </video>
+  <main class="fade-in">
+    <div class="navBackground"></div>
+    <button id="theme-toggle" class="theme-toggle">🔆</button>
+
+    <div class="social-icons">
+        <a href="mailto:zainahmad.swe@gmail.com" target="_blank" aria-label="Email">
+          <img src="items/gmail.png" style="height: 1rem">
+        </a>
+        <a href="https://github.com/ZainSWE" target="_blank" aria-label="GitHub">
+          <img src="items/github.png" style="height: 1rem">
+        </a>
+        <a href="https://www.linkedin.com/in/zainswe/" target="_blank" aria-label="LinkedIn">
+          <img src="items/linkedin.png" style="height: 1rem">
+        </a>
     </div>
-    <section class="fwh-slide">
-      <h1 class="heading">
-        ABOUT:
-      </h1>
-    </section>
-    <section class="about">
-      <h1 class="about-title">
-        Software Engineer / Computer Science Student
-      </h1>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+
+    <nav id="navbar" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="items/Resume.pdf" target="_blank">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <img src="items/portrait3.png" class="portraitBackground">
+
+    <div class="portrait-container">
+      <img src="items/portrait2.png" class="portrait">
+    </div>
+
+    <h1 class="about">About Me</h1>
+    
+    <section class="aboutBlurb">  
       <p>
-        Hey! I'm Zain, a first year Computer Science student studying @ University of Guelph.
+        With seven years of experience in multimedia and a strong foundation in front-end development and UX/UI design, I enjoy building clean, user-friendly digital experiences. <br><br>I work with tools like Blender and Three.js to bring creative and interactive elements to life, blending technical skills with a visual design mindset. I'm continuously learning and refining my craft to develop innovative solutions across both software and media projects.
       </p>
     </section>
-</body>
 
+  </main>
+
+  <footer>© 2025 Zain Ahmad</footer>
+  <script src="app.js"></script>
+</body>
 </html>
